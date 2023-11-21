@@ -43,8 +43,9 @@ export function Github({ settings }: Props) {
           settings dialog above.
           <br />
           Create an OpenAI account if you don&apos;t have one. Then, you need
-          to buy at least $1 worth of credit on the Billing dashboard.
-          this key is never stored. Check the code to confirm.
+            to buy at least $1 worth of credit on the Billing dashboard.
+            <br />
+          The API key is never stored. Check the code to confirm.
           </div>
         ) : (
           <div className="flex space-x-4 text-sm text-muted-foreground">

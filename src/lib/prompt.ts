@@ -1,5 +1,3 @@
-import ChatCompletionMessageParam from "openai";
-
 const SYSTEM_PROMPT: string =
   `
 You are an expert Tailwind developer
