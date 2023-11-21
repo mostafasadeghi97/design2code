@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import CodePreview from "@/components/code-preview";
 import { Download, Undo } from "lucide-react";
+import Image from "next/image";
 
 
 const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
@@ -100,10 +101,12 @@ export function Sidebar({ settings, setSettings, appState, generatedCode, refere
                     "scanning relative": appState === "GENERATING",
                   })}
                 >
-                  <img
+                  <Image
                     className="w-[360px] max-h-[330px] border border-gray-200 rounded-md"
                     src={referenceImages[0]}
                     alt="Reference"
+                    width={360}
+                    height={330}
                   />
                 </div>
                 <div className="text-gray-400 uppercase text-sm text-center mt-1">

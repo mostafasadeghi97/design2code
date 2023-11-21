@@ -42,7 +42,7 @@ export function Github({ settings }: Props) {
           Please add your OpenAI API key (must have GPT4 vision access) in the
           settings dialog above.
           <br />
-          Create an OpenAI account if you don't have one. Then, you need
+          Create an OpenAI account if you don&apos;t have one. Then, you need
           to buy at least $1 worth of credit on the Billing dashboard.
           this key is never stored. Check the code to confirm.
           </div>
