@@ -23,6 +23,7 @@ function UploadDoprzone({ setReferenceImages }: Props) {
       "image/png": [".png"],
       "image/jpeg": [".jpeg"],
       "image/jpg": [".jpg"],
+      "image/webp": [".webp"],
     },
     onDrop: (acceptedFiles) => {
       // Set up the preview thumbnail images
