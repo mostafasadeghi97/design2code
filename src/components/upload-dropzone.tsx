@@ -8,6 +8,8 @@ type FileWithPreview = {
   preview: string;
 } & File;
 
+
+
 interface Props {
   setReferenceImages: (referenceImages: string[]) => void;
 }
@@ -64,7 +66,7 @@ function UploadDoprzone({ setReferenceImages }: Props) {
 
   return (
     <section className="container">
-      <p className="mb-2 text-lg text-zinc-700 text-center mb-4">
+      <p className="text-lg text-zinc-700 text-center mb-4">
         Make sure you set your openai key in settings dialog in the left
         sidebar.
       </p>
