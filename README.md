@@ -4,7 +4,7 @@ Welcome to Design2Code, the ultimate web design to HTML/CSS/JS converter! ðŸš€âœ
 
 ## Overview
 
-Design2Code is an open-source project that converts various web design formats, including sketches, wireframes, Figma, XD, etc., into clean and responsive HTML/CSS/JS code. Just upload your design image, and Design2Code will automatically generate the code for you. It's that simple!
+Design2Code is an open-source project that converts various web design formats, including sketches, wireframes, Figma, XD, etc., into clean and responsive HTML/CSS code. Just upload your design image, and Design2Code will automatically generate the code for you. It's that simple!
 
 ## Demo Video
 
