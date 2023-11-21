@@ -28,7 +28,7 @@ We welcome contributions from the community! If you have ideas, bug fixes, or en
 
 ## 📬 Feedback
 
-We value your feedback! Reach out directly on LinkedIn: [Mostafa Sadeghi](https://www.linkedin.com/in/mostafa-sadeghi/) or email us at dev@design2code.dev
+We value your feedback! Reach out directly on LinkedIn: [Mostafa Sadeghi](https://www.linkedin.com/in/mostafa-sadeghi/)
 
 ## License
 
