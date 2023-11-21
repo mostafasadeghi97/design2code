@@ -109,20 +109,12 @@ const Dashboard = () => {
 
 
       if (!response.ok) {
-        if (response.status === 429) {
-          toast({
-            title: "Ran out of free daily questions",
-            description:
-              "Please upgrade to our Pro plan to ask unlimited questions",
-            variant: "destructive",
-          });
-        }
 
         if (response.status === 500) {
           toast({
             title: "Something went wrong",
             description:
-              "Please refresh this page and try again. If the problem persists, please contact us at support@chatswift.co",
+              "Please refresh this page and try again.",
             variant: "destructive",
           });
         }
