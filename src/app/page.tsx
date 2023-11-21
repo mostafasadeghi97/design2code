@@ -71,7 +71,7 @@ const Dashboard = () => {
   function doCreate(referenceImages: string[]) {
     setReferenceImages(referenceImages);
     if (referenceImages.length > 0) {
-      console.log("referenceImages", referenceImages);
+
       applyCodeGeneration({
         generationType: "create",
         image: referenceImages[0],
@@ -99,7 +99,7 @@ const Dashboard = () => {
 
   const { mutate: startGenerateCode } = useMutation({
     mutationFn: async ({ params }: { params: GenerationParams }) => {
-      console.log("params", params);
+      
       const response = await fetch("/api/code", {
         method: "POST",
         body: JSON.stringify({
@@ -107,10 +107,8 @@ const Dashboard = () => {
         }),
       });
 
-      console.log("response", response);
 
       if (!response.ok) {
-        // console.log('response', response)
         if (response.status === 429) {
           toast({
             title: "Ran out of free daily questions",
@@ -181,8 +179,6 @@ const Dashboard = () => {
       setAppState("CODE_READY");
     },
   });
-
-  console.log("appState", appState);
 
   return (
     <div className="h-full relative">

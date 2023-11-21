@@ -48,7 +48,6 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL("https://design2code.dev"),
-    // themeColor: "#FFF",
     robots: {
       index: true,
       follow: true,

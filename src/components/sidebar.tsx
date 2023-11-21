@@ -29,7 +29,6 @@ interface Props {
 }
 
 export function Sidebar({ settings, setSettings, appState, generatedCode, referenceImages, generationStatus, followupUpdate, setFollowupUpdate, applyUpdate, downloadCode, reset }: Props) {
-  console.log("settings", settings);
 
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
