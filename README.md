@@ -10,6 +10,8 @@ Design2Code is an open-source project that converts various web design formats, 
 
 Check out the magic in action! Watch our demo video
 
+https://github.com/mostafasadeghi97/design2code/assets/41698808/78b6e1ee-ddb4-479d-ae58-0f75103d7354
+
 ## 🌐 Hosted App
 
 try the hosted version: [Design2Code Live Demo](https://design2code.dev)
