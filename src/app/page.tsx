@@ -107,8 +107,16 @@ const Dashboard = () => {
         }),
       });
 
-
       if (!response.ok) {
+
+        if (response.status === 401) {
+          toast({
+            title: "Invalid OpenAI API key",
+            description:
+              "Please check your OpenAI API key in the settings and try again.",
+            variant: "destructive",
+          });
+        }
 
         if (response.status === 500) {
           toast({
@@ -150,9 +158,6 @@ const Dashboard = () => {
         done = doneReading;
         const chunkValue = decoder.decode(value);
 
-        // accResponse += chunkValue;
-
-        // append chunk to the actual message
         if (chunkValue) {
           setGeneratedCode((prev) => prev + chunkValue);
         }
@@ -160,11 +165,7 @@ const Dashboard = () => {
     },
 
     onError: () => {
-      toast({
-        title: "There was a problem generating code",
-        description: "Please check the console for more details",
-        variant: "destructive",
-      });
+      
     },
     onSettled: async () => {
       setGenerationStatus((prev) => [...prev, "Code generation completed"]);

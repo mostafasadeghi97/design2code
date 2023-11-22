@@ -30,6 +30,10 @@ export const POST = async (req: NextRequest) => {
       });
     }
 
+    if (openAiApiKey === "sk-...") {
+      return new Response("Invalid API key", { status: 401 });
+    }
+
     const openai = openaiClient(openAiApiKey);
 
     const response = await openai.chat.completions.create({
