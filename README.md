@@ -21,6 +21,7 @@ try the hosted version: [Design2Code Live Demo](https://design2code.dev)
 Design2Code is built using Next.js. Deploy your own instance of Design2Code with just one click using Vercel. Click the button below to get started:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/mostafasadeghi97/design2code)
+
 If you are using the Vercel hobby plan, update the maxDuration in app/api/code/route.ts to 10 seconds. [see this issue](https://github.com/mostafasadeghi97/design2code/issues/1)
 
 ## 🤝 Contributing
