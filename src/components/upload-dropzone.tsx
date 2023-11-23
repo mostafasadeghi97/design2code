@@ -3,12 +3,11 @@ import { useDropzone } from "react-dropzone";
 import { toast } from "react-hot-toast";
 import { Cloud } from "lucide-react";
 import { fileToDataURL } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 type FileWithPreview = {
   preview: string;
 } & File;
-
-
 
 interface Props {
   setReferenceImages: (referenceImages: string[]) => void;
@@ -67,10 +66,28 @@ function UploadDoprzone({ setReferenceImages }: Props) {
 
   return (
     <section className="container">
+      <h1 className="text-2xl font-semibold text-zinc-900 mb-4 text-center">
+        Transform any web design Screenshot to clean HTML/CSS code
+      </h1>
       <p className="text-lg text-zinc-700 text-center mb-4">
         Make sure you set your openai key in settings dialog in the left
         sidebar.
       </p>
+      <div className="flex justify-center mb-4">
+        <Button
+          variant="default"
+          className="shadow-none"
+          onClick={() => {
+            window.open(
+              "https://github.com/mostafasadeghi97/design2code#demo-video",
+              "_blank"
+            );
+          }}
+        >
+          Watch the demo video
+        </Button>
+      </div>
+
       <div {...getRootProps({ style: style as any })}>
         <div className="flex flex-col items-center justify-center w-full rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-200">
           {/* // if settings.openapikey is null then disable this input */}

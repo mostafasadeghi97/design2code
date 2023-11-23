@@ -1,6 +1,4 @@
-import {
-  StarIcon,
-} from "@radix-ui/react-icons";
+import { StarIcon } from "@radix-ui/react-icons";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -24,34 +22,53 @@ export function Github({ settings }: Props) {
           <CardTitle>design2code</CardTitle>
           <CardDescription>Convert any design to code</CardDescription>
         </div>
-        <div className="flex items-center rounded-md bg-secondary text-secondary-foreground">
-          <Button variant="secondary" className="shadow-none" onClick={
-            () => {
-              window.open("https://github.com/mostafasadeghi97/design2code", "_blank")
-            }
-          }>
-            <StarIcon className="mr-2 h-4 w-4" />
-            Star
+        <div className="rounded-md">
+          <Button
+            variant="default"
+            className="shadow-none"
+            onClick={() => {
+              window.open(
+                "https://github.com/mostafasadeghi97/design2code",
+                "_blank"
+              );
+            }}
+          >
+            <StarIcon className="mr-2 h-4" />
+            Star Repo
           </Button>
         </div>
       </CardHeader>
 
       <CardContent>
         {!settings.openAiApiKey ? (
-        <div className="flex space-x-4 text-sm text-muted-foreground">
-          Please add your OpenAI API key (must have GPT4 vision access) in the
-          settings dialog above.
-          <br />
-          Create an OpenAI account if you don&apos;t have one. Then, you need
+          <div className="flex space-x-4 text-sm text-muted-foreground">
+            Please add your OpenAI API key (must have GPT4 vision access) in the
+            settings dialog above.
+            <br />
+            Create an OpenAI account if you don&apos;t have one. Then, you need
             to buy at least $1 worth of credit on the Billing dashboard.
             <br />
-          The API key is never stored. Check the code to confirm.
+            The API key is never stored. Check the code to confirm.
           </div>
         ) : (
           <div className="flex space-x-4 text-sm text-muted-foreground">
             Upload a design image to get started.
           </div>
         )}
+        <div className="mt-2 grid w-full">
+          <Button
+            variant="default"
+            className="shadow-none"
+            onClick={() => {
+              window.open(
+                "https://bytebeatbulletin.beehiiv.com/subscribe",
+                "_blank"
+              );
+            }}
+          >
+            Join my newsletter for updates
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Host: https://design2code.dev
