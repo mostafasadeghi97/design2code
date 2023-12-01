@@ -5,6 +5,7 @@ import { NextRequest } from "next/server";
 import { OpenAIStream, StreamingTextResponse } from "ai";
 import { ParamsValidator } from "@/lib/validators/params-validator";
 import { buildMessages } from "@/lib/prompt";
+import log from "@/lib/log";
 
 export const maxDuration = 180;
 
@@ -45,7 +46,14 @@ export const POST = async (req: NextRequest) => {
     });
 
     const stream = OpenAIStream(response, {
-      async onCompletion(completion) {},
+      async onCompletion(completion) {
+        const logInfo = JSON.stringify({
+          prompt: messages,
+          completion
+        })
+
+        log(logInfo);
+      },
     });
 
     return new StreamingTextResponse(stream);
