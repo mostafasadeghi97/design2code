@@ -16,6 +16,9 @@ https://github.com/mostafasadeghi97/design2code/assets/41698808/d04b95bb-d4cc-46
 
 try the hosted version: [Design2Code Live Demo](https://design2code.dev)
 
+## OpenAI GPT
+try as a GPT: [GPT](https://chat.openai.com/g/g-q7eESGBHX-screenshot-to-code) 
+
 ## Deployment
 
 Design2Code is built using Next.js. Deploy your own instance of Design2Code with just one click using Vercel. Click the button below to get started:
